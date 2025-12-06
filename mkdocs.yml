@@ -1,0 +1,41 @@
+site_name: Richa Kulshrestha
+site_url: https://richakulshrestha.github.io/
+site_author: Richa Kulshrestha
+
+# Theme Configuration
+theme:
+  name: material
+  palette: 
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs        # Top navigation bar like a modern app
+    - navigation.sections    # Grouped sidebar
+    - content.code.copy      # Copy button for your code blocks
+
+# Custom CSS (Optional, but good for resizing images)
+extra_css:
+  - stylesheets/extra.css
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  - About: about.md
+  - Projects:
+      - 'Cloud ETL Pipeline': projects/etl-pipeline.md
+      - 'Real-time Streaming': projects/kafka-streaming.md
+  - Resume: resume.md
