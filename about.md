@@ -1,3 +1,8 @@
+---
+layout: page
+title: About Me
+permalink: /about/
+---
 # About Me
 
 Here is an overview of my technical skills and the technologies I work with.
